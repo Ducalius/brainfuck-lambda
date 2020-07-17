@@ -1,6 +1,7 @@
 
 # Usage: brainfuck( code, input )
 
+      
 brainfuck =   lambda cd,ip='':(
             lambda c,i,m,p,o,u,st
          ,d,s,t:(lambda oc:[[(lambda
@@ -54,7 +55,7 @@ brainfuck =   lambda cd,ip='':(
           p[0]][0] != 0 else (st.                              pop( ) if
          m[p[0]][0] == 0 else 0)                               )}) ) (cd,
         list(ip), [[(0)] for x                                  in range(
-      10000)], [0], [0], [],[                                   ], [[0],[
+      256)], [0] , [0] , [],[                                   ], [[0],[
      0], [0]],__import__("s"                                    +"y"+ "s", 
     globals() , locals() ,                                       [], (0)),
    (lambda err : (_ for _                                         in () ) .
